@@ -1,0 +1,22 @@
+Files in this directory are from mixmax_release_200beta.zip together with changes by K.N. Anagnostopoulos (KNA)
+for iterfacing the save/read of the state of the engine (see changes_kna.cpp )
+Basic usage examples can be found in: example_checkpointing.cpp
+> g++  -std=c++11 mixmax.cpp example_checkpointing.cpp -o mxmx
+> ./mxmx 200000
+-------------------------------------------------------------------------------------------------------
+References:
+-----------
+https://mixmax.hepforge.org
+https://en.wikipedia.org/wiki/MIXMAX_generator
+https://arxiv.org/abs/1403.5355
+K.G. Savvidy, The MIXMAX random number generator Comp. Phys. Commun. 196  (2015) 161, [arXiv:1403.5355]
+-------------------------------------------------------------------------------------------------------
+
+This README file is written by KNA and is not part of the 2.0 beta release.
+Also the files:
+changes_kna.cpp
+example_checkpointing.cpp
+are provided by KNA and the files mixmax.cpp, mixmax.hpp have been modified by KNA. See
+> diff mixmax.cpp mixmax_v200beta.cpp
+> diff mixmax.hpp mixmax_v200beta.hpp
+for the differences from the original files.
